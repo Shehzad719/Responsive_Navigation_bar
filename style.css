@@ -1,0 +1,172 @@
+* {
+    margin: o;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+
+/* .bg-image {
+    background-image: url(https://images.unsplash.com/photo-1580927752452-89d86da3fa0a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: auto; 
+    width: 100%; 
+} */
+
+body {
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+    height: 100vh;
+    width: 100%;
+    margin: 0 auto;
+    background-image: url(https://images.pexels.com/photos/129731/pexels-photo-129731.jpeg?auto=compress&cs=tinysrgb&w=600); 
+}
+
+.main-nevbar{
+    width: 100%;
+    height: 80px;
+    background-color: black;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    position: sticky;
+    top: 0;
+    transition: top 0.8s;
+    
+}
+
+.logo:hover {
+    cursor: pointer;
+}
+
+.threeline{
+    display: none;
+}
+
+.nav-bar ul {
+    display: flex;
+}
+
+.nav-bar ul li a {
+    display: block;
+    color: #fff;
+    font-size: 19px;
+    padding: 10px 25px;
+    transition: 0.10s;
+    margin: 0 5px;
+    border-radius: 40px;
+}
+
+.nav-bar ul li a:hover {
+    color: black;
+    background-color: #fff;
+    transition: 0.7s;
+}
+
+.active{
+    color: black;
+    background-color: #fff;
+}
+
+/* .first-heading{
+    font-size: 40px;
+    font-weight: 300;
+    padding: 10px 0px 0px 30px;
+    font-style: italic;
+    color: white;
+    line-height: 25px;
+    transition: 0.4s;
+}
+
+.first-paragraph{
+    font-size: 20px;
+    font-style: normal;
+    color: orange;
+} */
+
+/* Here is Media quiried work for responsive navigation on every screen */
+
+@media only screen and (max-width: 1320px) {
+    .main-nevbar {
+        padding: 0 50px;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .main-nevbar {
+        padding: 0 30px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .threeline {
+        display: block;
+        cursor: pointer;
+    }
+
+
+    @media only screen and (max-width: 900px) {
+        .nav-bar {
+            width: 100%;
+            height: auto;
+        }
+    
+
+
+
+
+
+
+
+    .threeline .line {
+        width: 30px;
+        height: 4px;
+        background-color: #fff;
+        margin: 6px 0;
+    }
+     /* .nav-bar {
+        display: none;  */
+    }
+    
+    .nav-bar {
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        transition: 0.7s;
+        width: 100vw;
+        height: 0;
+        overflow: hidden;
+        background-color: black;
+    }
+    .nav-bar.active{
+        height: 290px;
+        color: black;
+    }
+
+
+    .nav-bar ul {
+        display: block;
+        width: fit-content;
+        margin: 10px auto 0 auto;
+        text-align: center;
+        transition: 0.5s;
+        opacity: 0;
+    }
+
+    .nav-bar.active ul {
+        opacity: 1;
+    }
+
+    .nav-bar ul li a {
+        margin-bottom: 15px;
+        margin-top: 10px;
+    }
+}

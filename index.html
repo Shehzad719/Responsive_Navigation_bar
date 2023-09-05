@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="bg-image"></div>
+    <header class="main-nevbar">
+        <div>
+            <img  class="logo"
+                src="https://d33wubrfki0l68.cloudfront.net/effc71f995a24044a92140f69723ef13d9bce275/d5b70/assets/images/logo/logo.svg"
+                alt="image not found" width="200px" height="60px">
+        </div>
+        <div class="threeline">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li>
+                    <a href="" style="color: black;" class="active">Home</a>
+                </li>
+                <li>
+                    <a href="#aboutus">About Us</a>
+                </li>
+                <li>
+                    <a href="#blog">Blog</a>
+                </li>
+                <li>
+                    <a href="#services">Services</a>
+                </li>
+                <li>
+                    <a href="#portfolio">Portfolio</a>
+                </li>
+
+            </ul>
+        </nav>
+    </header>
+    
+
+
+
+
+    <script>
+        threeline = document.querySelector(".threeline");
+        threeline.onclick = function () {
+            navBar = document.querySelector(".nav-bar");
+            navBar.classList.toggle("active");
+        }
+
+        
+
+    </script>
+</body>
+
+</html>
